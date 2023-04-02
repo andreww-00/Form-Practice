@@ -1,0 +1,15 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.hero {
+    width: 50%;
+    height: 50%;
+}
+
+.brand {
+    display: flex;
+}
+
