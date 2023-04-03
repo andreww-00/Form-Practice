@@ -4,6 +4,7 @@
     --light: #030f14;
     --font-bright: rgb(185,185,185);
     --font-darker: rgb(77,77,77); 
+    --error: #B74F6F;
 }
 
 body {
@@ -85,7 +86,24 @@ input {
     width: 25rem;
     border-radius: 5px;
 }
+input:focus {
+    outline: none;
+    border: 1px solid var(--green);
+}
 
+/* input:not(:placeholder-shown):not(:focus):invalid {
+    outline: none;
+    border: 1px solid var(--error);
+}
+
+input:focus:invalid {
+    outline: none;
+    border: 1px solid var(--error);
+} */
+
+input::placeholder {
+    opacity: .2;
+}
 .content {
     display: flex;
     flex-direction: column;
@@ -131,5 +149,10 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: var(--font-bright);
+}
+
+.match {
+    padding-top: 5px;
+    color: var(--error);
 }
