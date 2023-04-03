@@ -2,14 +2,36 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .hero {
-    width: 50%;
-    height: 50%;
+    height: 100vh;
+    position: relative;
 }
 
 .brand {
+    font-family: outfit, 'arial';
     display: flex;
+    position: absolute;
+    color: white;
+    top:250px;
+    background-color: rgba(0, 0, 0, 0.411);
+    justify-content: center;
+    align-items: center;
+    width: 617.609px;
+    font-size: 25px;
+    font-weight: bolder;
 }
 
+.logo {
+    width: 20%;
+    height: 20%; 
+    background-color: white;
+    border-radius: 100%;
+}
+
+.logo, .brand>h1 {
+    margin: 10px 10px 10px 10px;
+}
