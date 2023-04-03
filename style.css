@@ -1,13 +1,19 @@
+:root {
+    --green: #9AEA89;
+}
+
 body {
     width: 100vw;
     height: 100vh;
     display: flex;
     margin: 0;
     padding: 0;
+    background-color: #d3d3d3;
 }
 
 .hero {
     height: 100vh;
+    width: 40vw;
     position: relative;
 }
 
@@ -16,22 +22,59 @@ body {
     display: flex;
     position: absolute;
     color: white;
-    top:250px;
+    top:200px;
     background-color: rgba(0, 0, 0, 0.411);
     justify-content: center;
     align-items: center;
-    width: 617.609px;
+    width: 40vw;
     font-size: 25px;
     font-weight: bolder;
 }
 
 .logo {
     width: 20%;
-    height: 20%; 
-    background-color: white;
-    border-radius: 100%;
+    height: 20%;
 }
 
 .logo, .brand>h1 {
     margin: 10px 10px 10px 10px;
+}
+
+form {
+    background-color: #fff;
+    padding: 1.5rem 0 1.5rem 0;
+    width: 60vw;
+}
+
+input {
+    width: 25rem;
+}
+form > div {
+    float: left;
+    margin-left: 4rem;
+    margin-bottom: 20px;
+}
+
+form > h1 {
+    margin-left: 4rem;
+    margin-top: 0;
+}
+
+input, label {
+    display: block;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.content > p, button  {
+    margin-left: 4rem;
+}
+
+button {
+    background-color: var(--green);
 }
