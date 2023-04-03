@@ -1,14 +1,19 @@
 :root {
     --green: #9AEA89;
+    --dark : #030C11;
+    --light: #030f14;
+    --font-bright: rgb(185,185,185);
+    --font-darker: rgb(77,77,77); 
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     width: 100vw;
     height: 100vh;
     display: flex;
     margin: 0;
     padding: 0;
-    background-color: #d3d3d3;
+    background-color: var(--dark);
 }
 
 .hero {
@@ -41,14 +46,14 @@ body {
 }
 
 form {
-    background-color: #fff;
+    background-color: var(--light);
     padding: 1.5rem 0 1.5rem 0;
     width: 60vw;
+    box-shadow: 6px 10px 7px 4px rgba(208,208,208,0.04);
+-webkit-box-shadow: 6px 10px 7px 4px rgba(208,208,208,0.04);
+-moz-box-shadow: 6px 10px 7px 4px rgba(208,208,208,0.04);
 }
 
-input {
-    width: 25rem;
-}
 form > div {
     float: left;
     margin-left: 4rem;
@@ -58,10 +63,27 @@ form > div {
 form > h1 {
     margin-left: 4rem;
     margin-top: 0;
+    color: var(--font-bright);
+    font-size: 27px;
+    
 }
 
 input, label {
     display: block;
+}
+
+label {
+    color: var(--font-darker); 
+    margin-bottom: 5px;
+}
+
+input {
+    background-color: var(--light);
+    border: 1px solid var(--font-darker);
+    color: var(--font-darker);
+    font-size: 20px;
+    width: 25rem;
+    border-radius: 5px;
 }
 
 .content {
@@ -77,4 +99,11 @@ input, label {
 
 button {
     background-color: var(--green);
+}
+
+
+.content > p {
+    font-size: 30px;
+    padding-right: 8rem;
+    color: var(--font-bright);
 }
