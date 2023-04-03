@@ -51,8 +51,8 @@ form {
     padding: 1.5rem 0 1.5rem 0;
     width: 60vw;
     box-shadow: 6px 10px 7px 4px rgba(208,208,208,0.04);
--webkit-box-shadow: 6px 10px 7px 4px rgba(208,208,208,0.04);
--moz-box-shadow: 6px 10px 7px 4px rgba(208,208,208,0.04);
+    -webkit-box-shadow: 6px 10px 7px 4px rgba(208,208,208,0.04);
+    -moz-box-shadow: 6px 10px 7px 4px rgba(208,208,208,0.04);
 }
 
 form > div {
