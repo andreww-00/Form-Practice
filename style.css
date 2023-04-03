@@ -81,7 +81,7 @@ input {
     background-color: var(--light);
     border: 1px solid var(--font-darker);
     color: var(--font-darker);
-    font-size: 20px;
+    font-size: 25px;
     width: 25rem;
     border-radius: 5px;
 }
@@ -93,17 +93,43 @@ input {
     align-items:flex-start;
 }
 
+.content > .login {
+    font-size: 20px;
+}
+
 .content > p, button  {
     margin-left: 4rem;
 }
 
 button {
     background-color: var(--green);
+    border:2px solid var(--green);
+    padding: 15px 40px;
+    font-size: 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: outfit, "arial";
+    margin-top: 30px;
 }
 
+button:hover {
+    background-color: var(--dark);
+    color: var(--green);
+    border: 2px solid var(--green);
+}
 
 .content > p {
     font-size: 30px;
     padding-right: 8rem;
     color: var(--font-bright);
+}
+
+a {
+    text-decoration: none;
+    color: var(--green);
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
 }
